@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mathan's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="loading">
+      <div class="spinner"></div>
+    </div>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="intro">
+        <h1>Hello, It's Me <span>Mathan</span></h1>
+        <p>And I'm a <span id="typing"></span></p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content fadeInOnScroll">
+        <img src="images/mathan.jpg" alt="Mathan's Photo" />
+        <div class="about-text">
+          <h3>Full Stack Developer!</h3>
+          <p>
+            I am a skilled web designer with extensive experience in the
+            industry. My passion lies in creating captivating website designs
+            and implementing them through frontend development. I take pride in
+            staying up-to-date with current design trends and leveraging my
+            creativity to produce visually appealing and user-friendly websites.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>My Services</h2>
+      <div class="services-content">
+        <div class="service">
+          <h3>Web Design</h3>
+          <p>Creating visually appealing and user-friendly website designs.</p>
+        </div>
+        <div class="service">
+          <h3>Frontend Development</h3>
+          <p>Implementing designs with HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="service">
+          <h3>AI Integration</h3>
+          <p>Using AI effectively to enhance web applications.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-content">
+        <div class="skill">
+          <div class="circle" data-percentage="60">
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div class="number">
+              <h2>60<span>%</span></h2>
+              <p>Java</p>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="circle" data-percentage="75">
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div class="number">
+              <h2>75<span>%</span></h2>
+              <p>C</p>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="circle" data-percentage="80">
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div class="number">
+              <h2>80<span>%</span></h2>
+              <p>C++</p>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="circle" data-percentage="90">
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div class="number">
+              <h2>90<span>%</span></h2>
+              <p>AI</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comments">
+      <h2>Leave a Replay</h2>
+      <p>
+        Your email address will not be published.Required fields are marked *
+      </p>
+      <form id="Comment-form">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website" />
+        </div>
+
+        <div class="form-group">
+          <label for="comment">Comment</label>
+          <textarea id="Comment" name="comment" rows="4" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="comment-section">
+        <h3>Comments</h3>
+        <ul id="comment-list"></ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-content">
+        <p>
+          Email:
+          <a href="mailto:shreeram56881@gmail.com">shreeram56881@gmail.com</a>
+        </p>
+        <p>Mobile: <a href="tel:+91 6381761984">+91 6381761984</a></p>
+      </div>
+    </section>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
